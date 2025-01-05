@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 @RestController
-@RequestMapping ("/api")
+@RequestMapping("/api")
 public class HelloController {
     @GetMapping("/hello")
     public String hello() {
@@ -46,13 +46,5 @@ public class HelloController {
         return nameAge;
     }
 
-    @GetMapping("/factorial")
-    public int calculateFactorial(@RequestParam int number) {
-        int result = 1;
-        for (int i = 1; i <= number; i++) {
-            result *= i;
-        }
-        return result;
-    }
-    
+
 }
